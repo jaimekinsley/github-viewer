@@ -2,25 +2,19 @@
 
 exports[`Repos component renders Repos 1`] = `
 <ul>
-  <li
-    key="http://github.com/about-me"
-  >
-    <p>
+  <li>
+    <a>
+       
       about-me
-    </p>
-    <a
-      href="http://github.com/about-me"
-    />
+       
+    </a>
   </li>
-  <li
-    key="http://github.com/bus-mall"
-  >
-    <p>
+  <li>
+    <a>
+       
       bus-mall
-    </p>
-    <a
-      href="http://github.com/bus-mall"
-    />
+       
+    </a>
   </li>
 </ul>
 `;
