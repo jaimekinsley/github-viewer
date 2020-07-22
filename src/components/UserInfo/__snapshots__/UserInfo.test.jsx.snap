@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShortForm component renders UserInfo 1`] = `
+<Fragment>
+  <p>
+    Name: 
+    Jaime Sanders
+  </p>
+  <p>
+    Number of Followers: 
+    5
+  </p>
+  <p>
+    Number of Following: 
+    3
+  </p>
+  <p>
+    GitHub Profile: 
+    <a
+      href="http://github.com/jaimekinsley"
+    >
+      http://github.com/jaimekinsley
+    </a>
+  </p>
+</Fragment>
+`;

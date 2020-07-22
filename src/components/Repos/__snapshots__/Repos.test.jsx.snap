@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repos component renders Repos 1`] = `
+<ul>
+  <li
+    key="undefined+about-me"
+  >
+    <a>
+       
+      about-me
+       
+    </a>
+  </li>
+  <li
+    key="undefined+bus-mall"
+  >
+    <a>
+       
+      bus-mall
+       
+    </a>
+  </li>
+</ul>
+`;

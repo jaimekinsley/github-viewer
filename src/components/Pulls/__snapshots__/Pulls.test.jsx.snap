@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pulls component renders Pulls 1`] = `
+<ul>
+  <li
+    key="undefined+undefined"
+  >
+    <a>
+       
+      1
+       
+    </a>
+  </li>
+  <li
+    key="undefined+undefined"
+  >
+    <a>
+       
+      2
+       
+    </a>
+  </li>
+</ul>
+`;
