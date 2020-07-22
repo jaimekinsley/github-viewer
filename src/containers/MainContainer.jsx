@@ -9,7 +9,7 @@ import { repoFetch } from '../services/repoFetch';
 export default class MainContainer extends Component {
   state = {
     username: '',
-    userInfo: {},
+    userDetails: {},
     repos: []
   }
 
@@ -25,15 +25,15 @@ export default class MainContainer extends Component {
       userFetch(username),
       repoFetch(username)
     ])
-      .then(([userInfo, repos]) => this.setState({ userInfo, repos }));
+      .then(([userDetails, repos]) => this.setState({ userDetails, repos }));
   }
 
   render() {
-    const { username, userInfo, repos } = this.state;
+    const { username, userDetails, repos } = this.state;
     return (
       <>
         <ShortForm username={username} onChange={this.handleChange} onSubmit={this.handleSubmit} />
-        <UserInfo userInfo={userInfo} />
+        <UserInfo userDetails={userDetails} />
         <Repos repos={repos} />
       </>
     );
