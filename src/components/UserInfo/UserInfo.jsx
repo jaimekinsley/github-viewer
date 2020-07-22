@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UserInfo = ({ username, followers, following, link }) => (
+const UserInfo = ({ userDetails }) => (
   <>
-    <p>Name: {username}</p>
-    <p>Number of Followers: {followers}</p>
-    <p>Number of Following: {following}</p>
-    <p>GitHub Profile: {link}</p>
+    <p>Name: {userDetails.name}</p>
+    <p>Number of Followers: {userDetails.followers}</p>
+    <p>Number of Following: {userDetails.following}</p>
+    <p>GitHub Profile: <a href= {userDetails.html_url}>{userDetails.html_url}</a></p>
   </>
 );
 
 UserInfo.propTypes = {
-  username: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  following: PropTypes.number.isRequired,
-  link: PropTypes.string.isRequired
+  userDetails: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    followers: PropTypes.number.isRequired,
+    following: PropTypes.number.isRequired,
+    html_url: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default UserInfo;

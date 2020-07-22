@@ -4,19 +4,23 @@ exports[`ShortForm component renders UserInfo 1`] = `
 <Fragment>
   <p>
     Name: 
-    jaimekinsley
+    Jaime Sanders
   </p>
   <p>
     Number of Followers: 
-    3
+    5
   </p>
   <p>
     Number of Following: 
-    2
+    3
   </p>
   <p>
     GitHub Profile: 
-    http://github.com/jaimekinsley
+    <a
+      href="http://github.com/jaimekinsley"
+    >
+      http://github.com/jaimekinsley
+    </a>
   </p>
 </Fragment>
 `;

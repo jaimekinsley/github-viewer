@@ -4,7 +4,12 @@ import UserInfo from './UserInfo';
 
 describe('ShortForm component', () => {
   it('renders UserInfo', () => {
-    const wrapper = shallow(<UserInfo username="jaimekinsley" followers={3} following={2} link="http://github.com/jaimekinsley" />);
+    const wrapper = shallow(<UserInfo userDetails={{
+      name: 'Jaime Sanders',
+      followers: 5,
+      following: 3,
+      html_url: 'http://github.com/jaimekinsley'
+    }} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

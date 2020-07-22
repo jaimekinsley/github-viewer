@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Repos = ({ repos }) => {
   const repoElements = repos.map(repo => (
-    <li key={repo.url}>
+    <li key={`${repo.url}+${repo.name}`}>
       <a href={repo.url}> {repo.name} </a>
     </li>
   ));

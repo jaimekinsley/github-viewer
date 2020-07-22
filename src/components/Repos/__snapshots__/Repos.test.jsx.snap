@@ -2,14 +2,18 @@
 
 exports[`Repos component renders Repos 1`] = `
 <ul>
-  <li>
+  <li
+    key="undefined+about-me"
+  >
     <a>
        
       about-me
        
     </a>
   </li>
-  <li>
+  <li
+    key="undefined+bus-mall"
+  >
     <a>
        
       bus-mall
